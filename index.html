@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Invincible - Serie</title>
-    <link rel="icon" href="img/icono.jpg" type="image/jpg">
+    <link rel="icon" href="images/" type="image/jpg">
 
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,10 +31,18 @@
             <a href="index.html"><img src="images/icon.png" alt="invincible-logo"></a>
         </div>
         <div id="menu">
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        
+        <a id="burger" href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <button id="icono" class="">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
+        </a>
+    
         <nav id="menu_bar" class="">
             <ul>
-                <li class="borde"><a href="index.html">Inicio</a></li>
+                <li class="borde"><a href="index.html">Introducción</a></li>
                 <li class="borde"><a href="galeria.html">Galeria</a></li>
                 <li class="borde"><a href="personajes.html">Personajes</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
@@ -41,7 +50,6 @@
         </nav>
         </div>
     </header>
-    
     
     <section id="index">
 
@@ -57,10 +65,11 @@
                 <li><strong>Escritor:</strong> Robert Kirkman</li>
                 <li><strong>Director:</strong> Jeff Allen</li>
             </ul>
+        </div>
 
+        <div class="contenido" id="introduccion">
+            <h2>Introducción</h2>
             <p>La serie "Invincible" sigue a Mark Grayson, un adolescente normal, excepto por el hecho de que su padre es el superhéroe más poderoso del planeta, Omni-Man. Cuando Mark finalmente desarrolla sus propios poderes, descubre que el legado de su padre no es tan heroico como parece. La historia explora la complejidad de los vínculos familiares, las traiciones y los sacrificios necesarios para ser un verdadero héroe.</p>       
-
-
         </div>
 
         <div class="contenido" id="publico">
@@ -120,29 +129,6 @@
     <footer>
         <p>&copy; 2024 Invincible-Serie | <a href="contacto.html">Contacto</a></p>
     </footer>
-
-    <script type="text/javascript">
-        
-        var x = document.getElementById("menu_bar");
-        function myFunction() {
-
-        if (x.className === "" )  {
-                x.className += " responsive";
-        } else {
-                x.className = "";
-        }
-        
-        }
-
-        function ejecutarSiEsMenor768() {
-            if (window.innerWidth > 768) {
-                x.className = "";
-            }
-        }
-
-        window.addEventListener('resize', ejecutarSiEsMenor768);
-          
-    </script>
 
 </body>
 </html>
