@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invincible - Galeria</title>
+    <link rel="icon" href="img/icono.jpg" type="image/jpg">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+    <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+
+</head>
+<body>
+    
+    <header>
+
+        <div class="banner">
+            <a href="index.html"><img src="images/icon.png" alt="invincible-logo"></a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <nav id="menu_bar" class="">
+            <ul>
+                <li class="borde"><a href="index.html">Inicio</a></li>
+                <li class="borde"><a href="galeria.html">Galeria</a></li>
+                <li class="borde"><a href="personajes.html">Personajes</a></li>
+                <li class="borde"><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section id="galeria">
+        <h1>Momentos Destacados de Invincible</h1>
+        <div class="gallery">
+            <a href="images/Imagen1.jpg" data-lightbox="mygallery" data-title="Mark Grayson despierta sus poderes."> <img src="images/imagen1.jpg" alt="Imagen 1"> </a>
+            <a href="images/Imagen2.jpg" data-lightbox="mygallery" data-title="Omni-Man derrota a los Guardians of the Globe."> <img src="images/imagen2.jpg" alt="Imagen 2"> </a>
+            <a href="images/Imagen3.jpg" data-lightbox="mygallery" data-title="Mark y Atom Eve Salvan la Ciudad. "> <img src="images/imagen3.jpg" alt="Imagen 3"> </a>
+            <a href="images/Imagen4.jpg" data-lightbox="mygallery" data-title="Debbie Grayson encuentra el traje que uso Omni-Man para derrotar a los Guardians of the Globe."> <img src="images/imagen4.jpg" alt="Imagen 4"> </a>
+            <a href="images/Imagen5.jpg" data-lightbox="mygallery" data-title="Cecil se enfrenta a Omni-Man."> <img src="images/imagen5.jpg" alt="Imagen 5"> </a>
+            <a href="images/Imagen6.jpg" data-lightbox="mygallery" data-title="Mark siendo golpeado brutalmente por Omni-Man"> <img src="images/imagen6.jpg" alt="Imagen 6"> </a>
+            <a href="images/Imagen7.jpg" data-lightbox="mygallery" data-title="Tras derrotar a Mark, Omni-Man tiene un momento de duda y finalmente decide abandonar el planeta."> <img src="images/imagen7.jpg" alt="Imagen 7"> </a>
+            <a href="images/Imagen8.jpg" data-lightbox="mygallery" data-title="Omni-Man dejándose llevar por un agujero negro."> <img src="images/imagen8.jpg" alt="Imagen 8"> </a>
+            <a href="images/Imagen9.jpg" data-lightbox="mygallery" data-title="Omni-Man e Invencible se vuelven a encontrar un planeta alienígena."> <img src="images/imagen9.jpg" alt="Imagen 9"> </a>
+            <a href="images/Imagen10.jpg" data-lightbox="mygallery" data-title="Los Viltrumitas derrotan a Invencible y Omni-Man. Omni-Man es llevado para ser ejecutado."> <img src="images/imagen10.jpg" alt="Imagen 10"> </a>
+            <a href="images/Imagen11.jpg" data-lightbox="mygallery" data-title="Invincible derrota a Angstrom Levy en una pelea donde Mark pierde el control."> <img src="images/imagen11.jpg" alt="Imagen 11"> </a>
+            <a href="images/Imagen12.jpg" data-lightbox="mygallery" data-title="Mark hablando con Debbie sobre que tiene que ser mejor héroe para no volver a perder el control"> <img src="images/imagen12.jpg" alt="Imagen 12"> </a>
+            <a href="images/Imagen13.jpg" data-lightbox="mygallery" data-title="Omni-Man arrepentido de lo que hizo."> <img src="images/imagen13.jpg" alt="Imagen 13"> </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Invincible-Serie | <a href="contacto.html">Contacto</a></p>
+    </footer>
+
+    <script type="text/javascript">
+        
+        var x = document.getElementById("menu_bar");
+        function myFunction() {
+
+        if (x.className === "" )  {
+                x.className += " responsive";
+        } else {
+                x.className = "";
+        }
+        
+        }
+
+        function ejecutarSiEsMenor768() {
+            if (window.innerWidth > 768) {
+                x.className = "";
+            }
+        }
+
+        window.addEventListener('resize', ejecutarSiEsMenor768);
+          
+    </script>
+
+</body>
+</html>

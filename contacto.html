@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invincible - Serie</title>
+    <link rel="icon" href="img/icono.jpg" type="image/jpg">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <a href="index.html"><img src="images/icon.png" alt="invincible-logo"></a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <nav id="menu_bar" class="">
+            <ul>
+                <li class="borde"><a href="index.html">Inicio</a></li>
+                <li class="borde"><a href="galeria.html">Galeria</a></li>
+                <li class="borde"><a href="personajes.html">Personajes</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contacto">
+    <form action="" method="post">
+
+        <h1>Contacto</h1>
+        <h2>Escribinos</h2>
+
+        <div class="input-group">
+            <input type="text" name="name" id="name" placeholder="Nombre">
+
+            <input type="email" name="email" id="email" placeholder="Email" required>
+
+            <textarea name="massage" id="message" cols="30" rows="5" placeholder="Mensaje"></textarea>
+
+            <input type="submit" class="btn" value="Enviar">
+
+        </div>
+
+    </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Invincible-Serie | <a href="contacto.html">Contacto</a></p>
+    </footer>
+
+    <script type="text/javascript">
+        
+        var x = document.getElementById("menu_bar");
+        function myFunction() {
+
+        if (x.className === "" )  {
+                x.className += " responsive";
+        } else {
+                x.className = "";
+        }
+        
+        }
+
+        function ejecutarSiEsMenor768() {
+            if (window.innerWidth > 768) {
+                x.className = "";
+            }
+        }
+
+        window.addEventListener('resize', ejecutarSiEsMenor768);
+          
+    </script>
+
+</body>
+</html>
