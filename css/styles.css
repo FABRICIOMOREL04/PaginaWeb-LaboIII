@@ -143,6 +143,10 @@ section{
     margin: 0px auto;
 }
 
+#contacto,#galeria,#personajes{
+    padding-top: 70px;
+}
+
 #portada{
     width:100vw;
     height: 40vh;
