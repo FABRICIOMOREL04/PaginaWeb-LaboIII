@@ -145,10 +145,10 @@ section{
 
 #portada{
     width:100vw;
-    height: 48vh;
+    height: 40vh;
     background-image: url('../images/portada-480px.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: right;
 }
 
 h1{
@@ -438,10 +438,10 @@ footer a:hover {
     }
 
     #portada{
-        height: 70vh;
+        height: 80vh;
         background-image: url('../images/portada-768px.jpg');
         background-size: cover;
-        background-position: center;
+        background-position: right;
     }
 
     .contenido p,.contenido ul{
@@ -455,7 +455,6 @@ footer a:hover {
         height: 100vh;
         background-image: url('../images/portada.jpg');
         background-size: cover;
-        background-position: center;
     }
 
 
@@ -494,11 +493,6 @@ footer a:hover {
 }
 
 @media(min-width:1300px){
-
-    #portada{
-        height: 100vh;
-        background-image: url('/images/portada.jpg');
-    }
 
     .contenido p,.contenido ul{
         font-size: 1.3em;
