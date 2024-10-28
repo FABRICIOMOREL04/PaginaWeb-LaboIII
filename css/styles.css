@@ -274,7 +274,7 @@ article{
     box-shadow: 0px 15px 30px rgba(0, 0, 0, 1);
 }
 
-.character-container{
+.character-container:hover{
     transform: scale(1.05);
 }
 
