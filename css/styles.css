@@ -494,6 +494,10 @@ footer a:hover {
     #burger{
         display:none;
     }
+
+    .contenido p,.contenido ul{
+        font-size: 1.3em;
+     }
 }
 
 @media(min-width:1300px){
