@@ -418,9 +418,10 @@ footer a:hover {
 
     #portada{
         height: 100vh;
-        background-image: url(/images/portada-768px.jpg);
+        background-image: url(/images/portada.jpg);
         background-size: cover;
     }
+
 
     nav {
         display: block;
