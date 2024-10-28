@@ -24,15 +24,17 @@ header{
     height: 4.5rem;
     position: fixed;
     z-index: 1000;
+    display:flex;
+    justify-content:space-between;
 }
 
 .banner{
     position: relative;
 }
 
-.banner a{
+.banner a img{
     position: absolute;
-    top:-10px;
+    top: -10px;
     left: 0px;
 }
 
@@ -136,23 +138,25 @@ nav.responsive ul li a {
 }
 
 nav.responsive ul li a:hover {
-    font-size: 1.5rem;
+    transform: scale(1);   
 }
 
 section{
     margin: 0px auto;
 }
 
-#contacto,#galeria,#personajes{
+#contacto,#galeria,#personajes,#resenas,#temporadas,#introduccion{
     padding-top: 70px;
 }
 
 #portada{
+    padding-top: 70px;
     width:100vw;
-    height: 40vh;
-    background-image: url('../images/portada-480px.jpg');
-    background-size: cover;
-    background-position: right;
+    min-width: 320px;
+}
+
+#portada img{
+    width: 100%;
 }
 
 h1{
@@ -165,37 +169,97 @@ h1{
 
 article{
     margin: 0px auto;
-    max-width: 1300px;
+    max-width: 1200px;
 }
 
 .contenido {
     padding: 20px;
     margin: 20px 20px;
-    background-color: white;
+    background-color: #00387a;
     border-radius: 20px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 .contenido h1{
     font-size: 4em;
+    color: #ececec;
 }
 
 .contenido h2{
     text-align: left;
     font-size: 3em;
+    color: #ececec;
+    font-family:"Bebas Neue", sans-serif;
+    font-weight: 400;
+    max-width: 1050px;
+    margin: 0 auto;
+    margin-bottom: 0px;
+}
+
+#inicio ul,#intro p,#publico p{
+    text-align: left;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    background-color: #f5f5F5;
+    padding: 25px;
+    font-size: 1.2em;
+}
+
+#index h1{
+    display: none;
+}
+
+#index article{
+    padding: 40px 0;
+}
+
+.contenedor{
+    width: 360px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.contenedor:hover{
+    transform: scale(1.05);
+}
+
+.contenedor a img{
+    height: 240px;
+}
+
+.contenedor h2{
+    text-align: center;
+    font-size: 3em;
     color: #00387a;
     font-family:"Bebas Neue", sans-serif;
     font-weight: 400;
-    max-width: 1000px;
-    margin: 0 auto;
-    margin-bottom: 0px;
+}
+
+#inicio h1{
+    display: none;
+}
+
+#titulo{
+    position: relative;
+    height: 120px;
+}
+
+#titulo img{
+    position: absolute;
+    top:-50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 340px;
 }
 
 .contenido p,
 .contenido ul {
     font-size: 0.9em;
     color: #666;
-    max-width: 1000px;
+    max-width: 1050px;
     margin: 0 auto;
     text-align:left ;
     padding: 10px 0px;
@@ -208,13 +272,25 @@ article{
     padding: 0;
 }
 
+#criticas{
+    background-color: #00387a;
+}
+
+#criticas h1{
+    font-size: 3em;
+    text-align: center;
+    color: #ececec;
+    font-weight: 400;
+}
+
 #reseñas li{
     text-align: left;
     border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
     background-color: #f5f5F5;
     padding: 25px;
     margin: 20px 0px;
+    font-size: 1.2em;
 }
 
 #reseñas li a:visited{
@@ -250,7 +326,7 @@ article{
 }
 
 .gallery img:hover {
-    transform: scale(1.05);
+    transform: scale(1);
 }
 
 /* PERSONAJES */
@@ -309,6 +385,47 @@ article{
     font-weight: 600;
     padding: 10px 20px;
     margin: 0px;
+}
+
+/* TEMPORADAS */
+
+#imagentemporada,#imagentemporada2,#imagentemporadaesp{
+    width: 100%;
+    min-width: 320px;
+}
+
+#imagentemporada img,#imagentemporada2 img,#imagentemporadaesp img{
+    width: 100%;
+    object-fit: contain;
+}
+
+#temporada{
+    background-color: #00387a;
+}
+
+#temporada h1{
+    font-size: 3em;
+    text-align: center;
+    color: #ececec;
+    font-weight: 400;
+}
+
+.temporada h3{
+    font-size: 1.5em;
+}
+
+.temporada li,.temporada p{
+    text-align: left;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    background-color: #f5f5F5;
+    padding: 25px;
+    margin: 20px 0px;
+    font-size: 1.2em;
+}
+
+.temporada p{
+    margin: 10px 0px;
 }
 
 /* CONTACTO */
@@ -439,32 +556,41 @@ footer a:hover {
     color: #ffd54f;
 }
 
-@media (min-width:480px) and (max-width:768px){
+@media (min-width:481px){
 
     nav{
         display: none;
     }
 
-    #portada{
-        height: 80vh;
-        background-image: url('../images/portada-768px.jpg');
-        background-size: cover;
-        background-position: right;
+    #reseñas li{
+        font-size: 0.9em;
     }
 
     .contenido p,.contenido ul{
+        font-size: 1.1em;
+    }
+
+    .temporada li,.temporada p{
         font-size: 1em;
     }
 }
 
 @media(min-width:768px){
 
-    #portada{
-        height: 100vh;
-        background-image: url('../images/portada.jpg');
-        background-size: cover;
+    .contenido p,.contenido ul{
+        font-size: 1.3em;
+     }
+
+     #reseñas li{
+        font-size: 0.7em;
     }
 
+    .temporada li,.temporada p{
+        font-size: 1em;
+    }
+}
+
+@media(min-width:1020px){
 
     nav {
         display: block;
@@ -490,23 +616,12 @@ footer a:hover {
     }
     
     nav ul li a:hover {
-        text-decoration:underline;
-        font-size: 1.3em;
-    
+        background-color: #00387a;
+        color: #ececec;
+        border-radius: 10px;
     }
 
     #burger{
         display:none;
-    }
-
-    .contenido p,.contenido ul{
-        font-size: 1.3em;
-     }
-}
-
-@media(min-width:1300px){
-
-    .contenido p,.contenido ul{
-        font-size: 1.3em;
     }
 }
