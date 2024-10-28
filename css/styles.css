@@ -189,7 +189,7 @@ article{
 
 .contenido p,
 .contenido ul {
-    font-size: 1em;
+    font-size: 0.8em;
     color: #666;
     max-width: 1000px;
     margin: 0 auto;
@@ -405,6 +405,7 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    margin-top: 10px;
     margin-left: 5px;
 }
 
@@ -441,6 +442,10 @@ footer a:hover {
         background-image: url('../images/portada-768px.jpg');
         background-size: cover;
         background-position: center;
+    }
+
+    .contenido p,.contenido ul{
+        font-size: 1em;
     }
 }
 
