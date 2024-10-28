@@ -146,7 +146,7 @@ section{
 #portada{
     width:100vw;
     height: 30vh;
-    background-image: url('./images/portada-480px.jpg');
+    background-image: url(images/portada.jpg);
     background-size: cover;
     background-position: center;
 }
