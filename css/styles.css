@@ -146,7 +146,7 @@ section{
 #portada{
     width:100vw;
     height: 30vh;
-    background-image: url(/images/portada-480px.jpg);
+    background-image: url('/images/portada-480px.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -306,7 +306,7 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(/images/contacto-480px.jpg);
+    background-image: url('/images/contacto-480px.jpg');
     background-size: cover;
 }
 
@@ -409,7 +409,7 @@ footer a:hover {
 
     #portada{
         height: 40vh;
-        background-image: url(/images/portada-768px.jpg);
+        background-image: url('/images/portada-768px.jpg');
         background-size: cover;
     }
 }
@@ -418,7 +418,7 @@ footer a:hover {
 
     #portada{
         height: 100vh;
-        background-image: url(/images/portada.jpg);
+        background-image: url('/images/portada.jpg');
         background-size: cover;
     }
 
